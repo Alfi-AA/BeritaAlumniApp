@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+
+    <!-- Spacer untuk memberi jarak dari atas -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <!-- 1. IMAGE LOGO -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="#E3F2FD"
+        android:padding="10dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="Logo Aplikasi"/>
+
+    <!-- 2. INPUT EMAIL -->
+    <!-- Menggunakan inputType="textEmailAddress" untuk keyboard email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"/>
+
+    <!-- 3. INPUT PASSWORD -->
+    <!-- Menggunakan inputType="textPassword" agar teks jadi titik-titik -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"/>
+
+    <!-- 4. TOMBOL LOGIN -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spacer agar tampilan naik sedikit ke tengah -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
